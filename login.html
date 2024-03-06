@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>User Registration and Login Form</title>
+<style>
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-header {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.form-container {
+  display: flex;
+}
+
+.form-box {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-right: 20px;
+  width: 300px;
+}
+
+h2 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: calc(100% - 22px);
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  width: calc(100% - 22px);
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+button:active {
+  background-color: #3e8e41;
+}
+
+.error-message {
+  color: #ff0000;
+  margin-bottom: 10px;
+}
+</style>
+</head>
+<body>
+  <div class="container">
+    <div class="main-header">
+      Hello Everyone
+    </div>
+
+    <div class="form-container">
+      <div class="form-box">
+        <h2>User Registration</h2>
+        <form id="registrationForm">
+          Username: <input type="text" id="username" required><br>
+          Password: <input type="password" id="password" required minlength="6"><br>
+          <button type="submit">Register</button>
+        </form>
+      </div>
+
+      <div class="form-box">
+        <h2>User Login</h2>
+        <form id="loginForm">
+          Username: <input type="text" id="loginUsername" required><br>
+          Password: <input type="password" id="loginPassword" required><br>
+          <button type="submit">Login</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
