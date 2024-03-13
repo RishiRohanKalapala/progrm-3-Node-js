@@ -23,7 +23,7 @@ If you want to modify or extend the project, you can edit the HTML, CSS, and Jav
 - `script.js`: Contains the JavaScript code for form validation and functionality.
 
 ## Credits
-This project was created by RishiRohanKalapala(https://github.com/RishiRohanKalapala).
+This project was created by RishiRohanKalapala (https://github.com/RishiRohanKalapala).
 
 ## License
 This project is licensed under the [MIT License](LICENSE).
